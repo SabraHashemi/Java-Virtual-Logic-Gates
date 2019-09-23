@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml" fx:controller="logedit6.LogicAppController">
+  <children>
+    <VBox prefHeight="728.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <MenuBar id="">
+          <effect>
+            <Glow level="0.48238993710691824">
+              <input>
+                <InnerShadow color="#ff33f7">
+                  <input>
+                    <Lighting diffuseConstant="1.3492063492063493">
+                      <bumpInput>
+                        <Shadow />
+                      </bumpInput>
+                      <light>
+                        <javafx.scene.effect.Light.Distant />
+                      </light>
+                    </Lighting>
+                  </input>
+                </InnerShadow>
+              </input>
+            </Glow>
+          </effect>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Close" fx:id="close1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem disable="true" mnemonicParsing="false" text="Delete" fx:id="delete" />
+                <MenuItem mnemonicParsing="false" text="Copy" fx:id="copy" />
+                <MenuItem mnemonicParsing="false" text="Paste" fx:id="paste" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+          <stylesheets>
+            <URL value="@newStyle.css" />
+          </stylesheets>
+        </MenuBar>
+        <ToolBar id="tool-bar" style="&#10;">
+          <effect>
+            <SepiaTone level="0.4276729559748428">
+              <input>
+                <ColorAdjust brightness="0.06106870229007644" contrast="0.13740458015267176" hue="0.03053435114503822" saturation="-0.2595419847328244">
+                  <input>
+                    <InnerShadow height="27.047619047619047" radius="13.023809523809524" width="27.047619047619047" />
+                  </input>
+                </ColorAdjust>
+              </input>
+            </SepiaTone>
+          </effect>
+          <items>
+            <Button id="delete" fx:id="del" disable="true" mnemonicParsing="false" text="Delete">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+              <textFill>
+                <Color blue="0.288" green="0.000" red="0.600" fx:id="x2" />
+              </textFill>
+            </Button>
+            <Button id="button" fx:id="close" mnemonicParsing="false" text="Close">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Button id="" fx:id="ungroup" mnemonicParsing="false" text="UnGroup">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Button id="" fx:id="add" mnemonicParsing="false" text="Make Complex Gate">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Button id="" mnemonicParsing="false" text="Button">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Button id="" mnemonicParsing="false" text="Button">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Button id="" mnemonicParsing="false" text="Button">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Button id="" mnemonicParsing="false" text="Button">
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Button>
+            <Separator prefWidth="89.0" />
+            <Slider id="zoomslider" fx:id="zoomSldr" max="200.0" prefWidth="73.0" style="&#10;" value="100.0">
+              <effect>
+                <Lighting diffuseConstant="1.0634920634920635">
+                  <bumpInput>
+                    <Shadow />
+                  </bumpInput>
+                  <light>
+                    <javafx.scene.effect.Light.Distant />
+                  </light>
+                </Lighting>
+              </effect>
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </Slider>
+          </items>
+          <stylesheets>
+            <URL value="@newStyle.css" />
+          </stylesheets>
+        </ToolBar>
+        <SplitPane dividerPositions="0.14383561643835616, 0.7485322896281801" focusTraversable="true" prefHeight="700.0" prefWidth="1024.0" style=" -fx-text-fill: white;&#10;    -fx-font-family: &quot;Arial Narrow&quot;;&#10;    -fx-font-weight: bold;&#10;    -fx-background-color: linear-gradient(#111241, #2A5058);&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" VBox.vgrow="ALWAYS">
+          <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem disable="true" mnemonicParsing="false" text="Delete" fx:id="del1" />
+                <MenuItem mnemonicParsing="false" text="Close" fx:id="close2" />
+                <MenuItem mnemonicParsing="false" text="Paste" fx:id="paste" />
+              </items>
+            </ContextMenu>
+          </contextMenu>
+          <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+              <children>
+                <SplitPane dividerPositions="0.5" focusTraversable="true" maxHeight="700.0" maxWidth="250.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="671.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <items>
+                    <AnchorPane maxHeight="1000.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="96.0">
+                      <children>
+                        <VBox maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="123.0" style=" -fx-text-fill: white;&#10;    -fx-font-family: &quot;Arial Narrow&quot;;&#10;    -fx-font-weight: bold;&#10;    -fx-background-color: linear-gradient(#61a2b1, #2A5058);&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                            <MenuButton id="" contentDisplay="TOP" minHeight="-Infinity" mnemonicParsing="false" prefWidth="371.0" text="TreeView" VBox.vgrow="ALWAYS">
+                              <effect>
+                                <InnerShadow />
+                              </effect>
+                              <items>
+                                <MenuItem mnemonicParsing="false" text="Action 1" />
+                                <MenuItem mnemonicParsing="false" text="Action 2" />
+                              </items>
+                              <stylesheets>
+                                <URL value="@newStyle.css" />
+                              </stylesheets>
+                              <VBox.margin>
+                                <Insets />
+                              </VBox.margin>
+                            </MenuButton>
+                            <ScrollPane fx:id="partsHost" maxHeight="1000.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="98.0" />
+                          </children>
+                        </VBox>
+                      </children>
+                    </AnchorPane>
+                    <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="331.0" prefWidth="157.0">
+                      <children>
+                        <VBox maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="123.0" style=" -fx-text-fill: white;&#10;    -fx-font-family: &quot;Arial Narrow&quot;;&#10;    -fx-font-weight: bold;&#10;    -fx-background-color: linear-gradient(#61a2b1, #2A5058);&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                            <MenuButton id="" contentDisplay="TOP" minHeight="-Infinity" mnemonicParsing="false" prefWidth="371.0" text="Designed Circute" VBox.vgrow="ALWAYS">
+                              <effect>
+                                <InnerShadow color="#569900" />
+                              </effect>
+                              <items>
+                                <MenuItem mnemonicParsing="false" text="Action 1" />
+                                <MenuItem mnemonicParsing="false" text="Action 2" />
+                              </items>
+                              <stylesheets>
+                                <URL value="@newStyle.css" />
+                              </stylesheets>
+                              <VBox.margin>
+                                <Insets />
+                              </VBox.margin>
+                            </MenuButton>
+                            <Separator orientation="VERTICAL" prefHeight="14.0" />
+                            <TreeView id="Herirarchy" fx:id="treev" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="137.0" style="     -fx-background-color: linear-gradient(#61a2b1, #2A5058);&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" />
+                          </children>
+                        </VBox>
+                      </children>
+                    </AnchorPane>
+                  </items>
+                </SplitPane>
+              </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="671.0" prefWidth="737.0" styleClass="anchor-pane">
+              <children>
+                <ScrollPane prefHeight="671.0" prefWidth="658.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="664.0" styleClass="anchor-pane">
+                      <children>
+                        <ScrollPane fx:id="dockHost" fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="716.0" prefWidth="871.0" style="&#10;" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="-235.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-221.0" AnchorPane.topAnchor="56.0">
+                          <content>
+                            <Pane prefHeight="200.0" prefWidth="200.0" />
+                          </content>
+                          <stylesheets>
+                            <URL value="@scroll.css" />
+                            <URL value="@newStyle.css" />
+                          </stylesheets>
+                        </ScrollPane>
+                      </children>
+                      <stylesheets>
+                        <URL value="@newStyle.css" />
+                      </stylesheets>
+                    </AnchorPane>
+                  </content>
+                </ScrollPane>
+              </children>
+              <stylesheets>
+                <URL value="@newStyle.css" />
+              </stylesheets>
+            </AnchorPane>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <Accordion fx:id="accordion" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="217.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <expandedPane>
+                    <TitledPane id="" fx:id="x1" minHeight="629.0" minWidth="217.0" prefHeight="629.0" prefWidth="254.0" text="Properties" textFill="#cc0093">
+                      <content>
+                        <AnchorPane id="Content" fx:id="x11" minHeight="601.0" minWidth="217.0" prefHeight="601.0" prefWidth="254.0001220703125" styleClass="Content">
+                          <children>
+                            <Label layoutX="9.0" layoutY="14.0" prefHeight="31.0" prefWidth="45.0" text="Name:">
+                              <textFill>
+                                <Color blue="1.000" green="0.400" red="0.592" fx:id="x3" />
+                              </textFill>
+                            </Label>
+                            <Label fx:id="name" layoutX="59.0" layoutY="16.0" prefHeight="21.0" prefWidth="98.0" />
+                            <Label layoutX="7.0" layoutY="61.0" prefHeight="22.0" prefWidth="41.0" text="X :" textFill="$x3" />
+                            <Label fx:id="dragX" layoutX="54.0" layoutY="65.0" prefHeight="21.0" prefWidth="73.0" />
+                            <Label graphicTextGap="6.0" layoutX="8.0" layoutY="100.0" prefHeight="24.0" prefWidth="35.0" text="Y:" textFill="#7266ff" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                              <effect>
+                                <Glow />
+                              </effect>
+                            </Label>
+                            <Label fx:id="dragY" layoutX="54.0" layoutY="105.0" prefHeight="21.0" prefWidth="56.0" />
+                            <CheckBox id="obliq" fx:id="cb3" layoutX="10.0" layoutY="275.0" mnemonicParsing="false" text="Obliq">
+                              <textFill>
+                                <Color blue="0.000" green="0.000" red="0.600" fx:id="x4" />
+                              </textFill>
+                            </CheckBox>
+                            <CheckBox id="curve" fx:id="cb1" layoutX="9.0" layoutY="218.0" mnemonicParsing="false" text="Curve" textFill="$x4" />
+                            <CheckBox id="Orthogonal" fx:id="cb2" layoutX="10.0" layoutY="249.0" mnemonicParsing="false" text="Orthogonal" textFill="$x4" />
+                          </children>
+                          <stylesheets>
+                            <URL value="@newStyle.css" />
+                          </stylesheets>
+                        </AnchorPane>
+                      </content>
+                      <stylesheets>
+                        <URL value="@newStyle.css" />
+                      </stylesheets>
+                    </TitledPane>
+                  </expandedPane>
+                  <panes>
+                    <fx:reference source="x1" />
+                    <TitledPane text="untitled">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="Content">
+                          <stylesheets>
+                            <URL value="@newStyle.css" />
+                          </stylesheets>
+                        </AnchorPane>
+                      </content>
+                      <stylesheets>
+                        <URL value="@newStyle.css" />
+                      </stylesheets>
+                    </TitledPane>
+                    <TitledPane prefHeight="625.0" prefWidth="213.0" style=" -fx-text-fill: white;&#10;    -fx-font-family: &quot;Arial Narrow&quot;;&#10;    -fx-font-weight: bold;&#10;    -fx-background-color: linear-gradient(#61a2b1, #2A5058);&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" text="untitled">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="Content">
+                          <stylesheets>
+                            <URL value="@newStyle.css" />
+                          </stylesheets>
+                        </AnchorPane>
+                      </content>
+                    </TitledPane>
+                  </panes>
+                  <stylesheets>
+                    <URL value="@newStyle.css" />
+                  </stylesheets>
+                </Accordion>
+              </children>
+            </AnchorPane>
+          </items>
+        </SplitPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

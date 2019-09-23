@@ -1,0 +1,62 @@
+ /* 
+    Document   : newStyle
+    Created on : Mar 26, 2013, 11:36:06 PM
+    Author     : Lotus
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.button
+{
+     
+    -fx-background-color: -fx-shadow-highlight-color,linear-gradient( to right, derive(-fx-color,-50%) 0%, derive(-fx-color,-60%) 100% ),rgba(222,135,205,255);
+       -fx-font-family:"Gouldy Old Style";
+   
+     
+}
+.tool-bar
+{
+    -fx-background-color:rgba(222,135,205,255)
+       
+}
+
+.slider
+{
+    
+     -fx-background-color:rgba(222,135,205,255)
+       
+}
+.menu-bar
+{
+          -fx-font-family:"Gouldy Old Style";
+      -fx-background-color:rgba(120,135,205,255);
+}
+.scroll-pane
+{
+    -fx-background-image: url("a.jpg")
+}
+
+.Content
+{
+     -fx-background-image: url("10.jpg")
+}
+.titled-pane .first-titled-pane
+{
+    -fx-background-color: rgba(222,135,205,255);
+        -fx-font-family:"Gouldy Old Style";
+}
+.menu-button
+{
+       -fx-font-family:"Gouldy Old Style";
+    -fx-background-color: rgba(222,135,205,255)
+}
+
+.scroll-pane.mylistview
+{
+      
+     -fx-background-color: rgba(222,135,205,255);
+     -fx-font-family:"Gouldy Old Style";
+         
+}
+
+

@@ -1,0 +1,46 @@
+.button
+{
+     
+    -fx-background-color: -fx-shadow-highlight-color,linear-gradient( to right, derive(-fx-color,-50%) 0%, derive(-fx-color,-60%) 100% ),rgba(0,204,255,14);
+    
+   
+     
+}
+.tool-bar
+{
+    -fx-background-color:rgba(0,136,170,14)
+}
+
+.slider
+{
+    
+     -fx-background-color:rgba(128,179,255,14)
+       
+}
+.menu-bar
+{
+    
+      -fx-background-color:rgba(0,102,255,14)
+}
+.scroll-pane
+{
+    -fx-background-image: url("J0143754.GIF")
+}
+
+.Content
+{
+     -fx-background-image: url("WB02198_.GIF")
+}
+.titled-pane .first-titled-pane
+{
+    -fx-background-color: rgba(0,204,255,14)
+}
+.menu-button
+{
+    -fx-background-color: rgba(0,204,255,14)
+}
+
+.scroll-pane.mylistview
+{
+     -fx-background-color: rgba(0,204,255,14)
+}
